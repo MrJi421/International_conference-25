@@ -32,6 +32,9 @@ app.get("/", (req, res) => {
   app.get("/registration", (req, res) => {
     res.render("registration.ejs");
   });
+  app.get("/contact", (req, res) => {
+    res.render("contact.php");
+  });
   
 
 
