@@ -41,36 +41,20 @@
     </div>
 
 
-    <div class="row">
-      <div class="col-md-12 offset-md-12">
-          <div class="contact-form">
-            <br>
-              <h3 class="mb-4 text-center"  style="color: #3357cd; font-weight: bold;">Send us a Message</h3>
-              <div class="cline clr_2 mb-5"></div>
-
-              <form class="col-md-8 margin-auto" action="process_form.php" method="POST">
-                  <div class="mb-3">
-                      <label for="name" class="form-label">Name</label>
-                      <input type="text" class="form-control" id="name" placeholder="Your Name">
-                  </div>
-                  <div class="mb-3">
-                      <label for="email" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="email" placeholder="Your Email">
-                  </div>
-                  <div class="mb-3">
-                      <label for="phone" class="form-label">Phone Number</label>
-                      <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
-                  </div>
-                  <div class="mb-3">
-                      <label for="message" class="form-label">Message/Query</label>
-                      <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
-                  </div>
-                  <button type="button" class="btn btn-lg contact-btn home-btn btn-left" onclick="alert('thank you, your form has been submitted.')">Submit</button>
-              </form>
-          </div>
+    <form action="contact.php" method="POST">
+      <div>
+        <input type="email" placeholder="email@example.com" name="email" required />
       </div>
-  </div>
-</div>
+      <div>
+        <input type="text" placeholder="Subject" name="subject" required />
+      </div>
+      <div>
+        <textarea placeholder="Your message" name="body" required></textarea>
+      </div>
+      <div>
+        <button type="submit">Send a message</button>
+      </div>
+      </form>
 
 
     <div class="contact-section">
